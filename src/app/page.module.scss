@@ -1,0 +1,182 @@
+@import "../styles/_variable";
+
+.hero-container {
+  position: relative;
+}
+
+.hero-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.1
+  ); 
+}
+
+.hero {
+  background-image: url("/hero-bg.jpg");
+  height: 99vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 6rem;
+  row-gap: 0rem;
+
+  .hero__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    .hero__text {
+      h1 {
+        font-weight: 900;
+        font-size: 4rem;
+      }
+    }
+
+    .hero__button {
+      display: flex;
+      align-self: start;
+
+      .hero__button_1 {
+        margin-right: 2rem;
+        background-color: $background-color-main;
+        border-radius: 2rem;
+      }
+
+      .hero__button_2 {
+        text-decoration: underline;
+
+        &:hover {
+          background-color: $background-color-hover;
+          text-decoration: none;
+          border-radius: 2rem;
+          transition: background-color 0.8s ease-in-out;
+        }
+      }
+
+      span {
+        cursor: pointer;
+
+        .hero__links {
+          display: flex;
+          align-items: center;
+          text-align: left;
+          text-decoration: none; /* Remove the underline since we'll add our own style */
+          padding: 0.5rem 1rem; /* Adjust padding as needed */
+          margin: 0.5rem 0;
+        }
+        svg {
+          margin-left: 0.5rem; /* Add margin between the text and the icon */
+        }
+      }
+    }
+  }
+
+  .hero__content_2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid $white;
+    padding: 0.5rem;
+
+    .hero__play_button {
+      background-color: $white;
+      padding: 3rem;
+      border-radius: 50%;
+    }
+    svg {
+      color: $background-color-main;
+      font-size: 1.5rem;
+    }
+  }
+
+  .hero__services {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin-top: 1rem;
+    .hero__dividers {
+      display: flex;
+      flex-direction: row;
+      width: 80vw;
+      .hero__divider {
+        height: 0.2rem;
+        width: 40vw;
+        background-color: $background-color-main;
+      }
+
+      .hero__divider_2 {
+        background-color: $white;
+        width: 60vw;
+        height: 0.2rem;
+      }
+    }
+    .hero__service_items {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.3rem;
+      background-color: $white;
+      color: black;
+      padding: 1rem;
+      width: 80vw;
+
+      .hero__item_1,
+      .hero__item_2,
+      .hero__item_3 {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        svg {
+          color: $background-color-main;
+          font-size: 200%;
+          background-color: $background-color-light;
+          border-radius: 3px;
+        }
+      }
+
+      .hero__service_item{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+
+        p{
+          color: $white-passive;
+        }
+
+        span{
+          color: $white-passive-link;
+          cursor: pointer;
+          text-decoration: underline;
+
+          &:hover{
+            color: $background-color-hover;
+          }
+          
+          &::after{
+            padding-bottom: 0.5rem;
+          }
+        }
+
+      }
+
+    }
+  }
+}

@@ -1,0 +1,86 @@
+@import "../../styles/_variable";
+
+.whatwedo {
+  height: 68vh;
+  background-color: $section-background;
+  display: flex;
+
+  img {
+    display: flex;
+    width: 50%;
+    height: 68vh;
+    object-fit: cover;
+  }
+
+  .whatwedo__content {
+    display: flex;
+    width: 100%;
+
+    .whatwedo__items {
+      background-color: $background-color-main;
+      width: 50%;
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+
+      .whatwedo__item_title {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 2rem;
+        span {
+          width: 1.5rem;
+          height: 3px;
+          background-color: $white;
+          margin-right: 1rem;
+        }
+      }
+
+      h1 {
+        max-width: 400px;
+        font-weight: bold;
+        margin-bottom: 2rem;
+      }
+
+      .whatwedo__item_list {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        max-width: 400px;
+        margin-bottom: 2rem;
+
+        span {
+          border-radius: 50%;
+          padding: 0.5rem;
+          background-color: $white;
+          color: $background-color-main;
+          display: flex;
+        }
+
+        .whatwedo__item_desc {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+      }
+
+      .whatwedo__item_button {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        .whatwedo__item_anchor {
+          padding: 0.9rem;
+          border: 2px solid $white;
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+
+          .whatwedo__item_anchor_icon {
+            margin-left: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
