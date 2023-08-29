@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google'
 import WhoWeAre from '@/components/whoweare/WhoWeAre'
 import OurServices from '@/components/ourservices/OurServices'
 import WhatWeDo from '@/components/whatwedo/WhatWeDo'
+import OurSkills from '@/components/ourskills/OurSkills'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,7 @@ export default function RootLayout({children,}: {children: React.ReactNode}) {
         <WhoWeAre></WhoWeAre>
         <OurServices></OurServices>
         <WhatWeDo></WhatWeDo>
+        <OurSkills></OurSkills>
         </body>
     </html>
   )

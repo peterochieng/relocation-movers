@@ -1,0 +1,103 @@
+@import "../../styles/_variable";
+
+.OurSkills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  width: 100%;
+
+  .OurSkills__content {
+    background-color: $section-background;
+    display: flex;
+    height: 60vh;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+
+    .OurSkills__skils {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 50%;
+      gap: 1rem;
+
+      .OurSkills__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        color: $background-color-main;
+
+        .OurSkills__title_line {
+          height: 3px;
+          width: 1.5rem;
+          background-color: $background-color-main;
+        }
+      }
+
+      h3 {
+        color: $black;
+      }
+
+      p {
+        display: flex;
+        align-items: center;
+        color: $white-passive;
+        text-align: justify;
+        align-self: center;
+      }
+
+      .OurSkills__button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.5rem;
+        align-self: center;
+        padding: 1rem;
+
+        background-color: $background-color-main;
+        border-radius: 15px;
+      }
+    }
+
+    .OurSkills__rating {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      color: $black;
+      justify-content: center;
+
+      .OurSkills__rating_pro {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+
+        h5 {
+          display: flex;
+          justify-content: space-between;
+        }
+        .ourskills__rater {
+          display: flex;
+          .ourskills__rating_pro_line_1 {
+            width: calc(100vw - 85vw);
+            height: 5px;
+            border-radius: 3px;
+            background-color: $background-color-main;
+          }
+          .ourskills__rating_pro_line_2 {
+            width: calc(100vw - 95vw);
+            height: 5px;
+            border-radius: 3px;
+            background-color: $background-color-light;
+          }
+        }
+      }
+    }
+  }
+}
