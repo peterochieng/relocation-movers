@@ -6,6 +6,7 @@ import WhoWeAre from '@/components/whoweare/WhoWeAre'
 import OurServices from '@/components/ourservices/OurServices'
 import WhatWeDo from '@/components/whatwedo/WhatWeDo'
 import OurSkills from '@/components/ourskills/OurSkills'
+import Video from '@/components/video/Video'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,6 +25,7 @@ export default function RootLayout({children,}: {children: React.ReactNode}) {
         <OurServices></OurServices>
         <WhatWeDo></WhatWeDo>
         <OurSkills></OurSkills>
+        <Video></Video>
         </body>
     </html>
   )
