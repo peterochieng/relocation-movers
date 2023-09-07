@@ -1,0 +1,113 @@
+@import "../../styles/_variable";
+
+.footer {
+  height: 50vh;
+  color: $black;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+    .footer__About_us {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 300px;
+
+      h5 {
+        font-size: 1.2rem;
+      }
+
+      .footer__divider {
+        height: 3px;
+        background-color: $background-color-main;
+        width: 2rem;
+      }
+
+      .footer__text {
+        color: $white-passive;
+      }
+
+      .footer__social_links {
+        display: flex;
+        gap: 1rem;
+
+        svg {
+          color: $white-passive;
+          border: 1px solid $white-passive;
+          border-radius: 50%;
+          padding: 0.3rem;
+          font-size: 2rem;
+          cursor: pointer;
+
+          &:hover {
+            color: $white;
+            background-color: $background-color-main;
+            border: 1px solid $background-color-main;
+          }
+        }
+      }
+    }
+
+    .footer__Quick_links{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 300px;
+  
+        h5 {
+          font-size: 1.2rem;
+        }
+  
+        .footer__divider {
+          height: 3px;
+          background-color: $background-color-main;
+          width: 2rem;
+        }
+  
+        .footer__text {
+          color: $white-passive;
+        }
+    }
+
+    .footer__Photo_gallery{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 300px;
+  
+        h5 {
+          font-size: 1.2rem;
+        }
+  
+        .footer__divider {
+          height: 3px;
+          background-color: $background-color-main;
+          width: 2rem;
+        }
+
+        .footer__gallery{
+            display: flex;
+            gap: 0.5rem;
+
+            .footer__image{
+                height: 100px;
+                width: 100px;
+                object-fit: cover;
+                cursor: pointer;
+
+                &:hover{
+                    opacity: 0.9;
+                }
+            }
+        }
+       
+
+    }
+  }
+}

@@ -7,6 +7,10 @@ import OurServices from '@/components/ourservices/OurServices'
 import WhatWeDo from '@/components/whatwedo/WhatWeDo'
 import OurSkills from '@/components/ourskills/OurSkills'
 import Video from '@/components/video/Video'
+import Quotation from '@/components/quotation/Quotation'
+import ContactUs from '@/components/contactus/ContactUs'
+import Clientelle from '@/components/clientelle/Clientelle'
+import Footer from '@/components/footer/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,6 +30,10 @@ export default function RootLayout({children,}: {children: React.ReactNode}) {
         <WhatWeDo></WhatWeDo>
         <OurSkills></OurSkills>
         <Video></Video>
+        <Quotation></Quotation>
+        <ContactUs></ContactUs>
+        <Clientelle></Clientelle>
+        <Footer></Footer>
         </body>
     </html>
   )

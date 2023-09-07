@@ -1,0 +1,132 @@
+@import "../../styles/_variable";
+
+.contactus {
+  background: $white;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  .contactus__Container{
+    background: $background-gradient-secondary;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 6rem;
+
+    .contactus__phone{
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      gap: 1rem;
+      margin-top: 1rem;
+
+
+
+      .contactus__details{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        p{
+          color: $white-passive;
+          font-size: 0.8rem;
+          font-weight: bold;
+        }
+      }
+
+      .contactus__icon{
+        border: 3px dashed $white-passive-link;
+        border-radius: 50%;
+        padding: 0.5rem;
+
+        svg{
+          color: $white;
+          background-color: $background-color-main;
+          border-radius: 50%;
+          padding: 1rem;
+          font-size: 3rem;
+        }
+      }
+    }
+
+  .contactus__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    .contactus__title_content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+
+      .contactus__title_line_1 {
+        height: 2.5px;
+        width: 1.5rem;
+        background-color: $white;
+      }
+    }
+
+    h1 {
+      width: 350px;
+      text-align: center;
+    }
+  }
+
+  .contactus__form {
+    .contactus__lable {
+      display: none;
+    }
+
+    input {
+      padding: 0.5rem;
+      background: $white;
+      border-radius: 3px;
+      border: none;
+      outline: none;
+      margin-right: 3px;
+      color: $black;
+
+      &::-webkit-input-placeholder {
+        /* Chrome, Safari, Opera */
+        color: $black;
+        font-weight: bold;
+      }
+
+      &::-moz-placeholder {
+        /* Firefox */
+        color: $black;
+        font-weight: bold;
+      }
+
+      &:-ms-input-placeholder {
+        /* Internet Explorer */
+        color: $black;
+        font-weight: bold;
+      }
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: $background-gradient-main;
+      border: none;
+      outline: none;
+      padding: 1rem;
+      border-radius: 15px;
+      cursor: pointer;
+      margin-top: 2rem;
+      font-weight: bold;
+      width: 100%;
+    }
+  }
+}
+}
