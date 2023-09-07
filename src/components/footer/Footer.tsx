@@ -33,6 +33,7 @@ const Footer = () => {
           <span className={styles.footer__text}>Lorem ipsum lorem ipsum</span>
           <span className={styles.footer__text}>Lorem ipsum lorem ipsum</span>
           <span className={styles.footer__text}>Lorem ipsum lorem ipsum</span>
+          copyright: <a href="http://milltech.link">Milltech</a>
         </div>
 
         <div className={styles.footer__Photo_gallery}>
@@ -47,7 +48,9 @@ const Footer = () => {
           </div>
 
         </div>
+       
       </div>
+     
     </div>
   );
 };
