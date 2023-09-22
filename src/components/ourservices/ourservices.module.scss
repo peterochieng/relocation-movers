@@ -7,6 +7,17 @@
   align-items: center;
   justify-content: center;
 
+  @include respond('mobile'){
+    height: auto;
+    padding: 6rem 0rem;
+  }
+
+  @include respond('tablet'){
+    height: auto;
+    padding: 6rem 0rem;
+
+  }
+
   .ourservices__title {
     display: flex;
     align-items: center;
@@ -33,6 +44,16 @@
     gap: 1rem;
     margin-top: 2rem;
     color: $black;
+
+    @media (max-width: 945px) {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
 
     .ourservices__card_container {
       img {
@@ -69,6 +90,5 @@
         }
       }
     }
-
   }
 }

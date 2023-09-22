@@ -8,10 +8,29 @@
   align-items: center;
   justify-content: center;
 
+  @include respond('mobile'){
+    height: auto;
+    padding: 6rem 0rem;
+  }
+
+  @include respond('tablet'){
+    height: auto;
+    padding: 6rem 0rem;
+
+  }
+
+  @media (max-width: 935px) {
+    flex-direction: column;
+  }
+
   .footer__container {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
+
+    @media (max-width: 935px) {
+      flex-direction: column;
+    }
 
     .footer__About_us {
       display: flex;

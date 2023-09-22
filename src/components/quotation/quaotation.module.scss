@@ -9,6 +9,11 @@
   align-items: center;
   gap: 2rem;
 
+  @include respond("mobile"){
+    height: auto;
+    padding: 6rem 0rem;
+  }
+
   .quotation__title {
     display: flex;
     flex-direction: column;

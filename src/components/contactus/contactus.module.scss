@@ -9,6 +9,16 @@
   align-items: center;
   gap: 2rem;
 
+  @include respond('mobile'){
+    height: auto;
+    padding: 6rem 0rem;
+  }
+
+  @include respond('tablet'){
+    height: auto;
+
+  }
+
   .contactus__Container{
     background: $background-gradient-secondary;
     display: flex;
@@ -16,6 +26,10 @@
     justify-content: space-around;
     gap: 2rem;
     padding: 6rem;
+
+    @media (max-width: 628px) {
+      flex-direction: column;
+    }
 
     .contactus__phone{
       display: flex;
@@ -60,11 +74,19 @@
     align-items: center;
     gap: 1rem;
 
+    @media (max-width: 628px) {
+      h1{
+        margin-bottom: 1rem;
+      }
+    }
+
     .contactus__title_content {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 1rem;
+
+     
 
       .contactus__title_line_1 {
         height: 2.5px;
@@ -127,6 +149,8 @@
       font-weight: bold;
       width: 100%;
     }
+
+   
   }
 }
 }

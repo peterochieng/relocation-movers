@@ -5,16 +5,33 @@
   background-color: $section-background;
   display: flex;
 
+  @include respond('mobile'){
+    height: auto;
+    padding: 6rem 0rem;
+  }
+
+  @include respond('tablet'){
+    height: auto;
+
+  }
+
   img {
     display: flex;
     width: 50%;
     height: 68vh;
     object-fit: cover;
+    @media (max-width: 660px) {
+      width: 100%;
+    }
   }
 
   .whatwedo__content {
     display: flex;
     width: 100%;
+
+    @media (max-width: 660px) {
+      flex-direction: column;
+    }
 
     .whatwedo__items {
       background-color: $background-color-main;
@@ -22,6 +39,10 @@
       padding: 3rem;
       display: flex;
       flex-direction: column;
+
+      @media (max-width: 660px) {
+        width: 100%;
+      }
 
       .whatwedo__item_title {
         display: flex;

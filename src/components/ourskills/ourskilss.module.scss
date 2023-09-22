@@ -7,6 +7,11 @@
   height: 60vh;
   width: 100%;
 
+  @include respond('mobile'){
+    height: auto;
+    padding: 6rem 0rem;
+  }
+
   .OurSkills__content {
     background-color: $section-background;
     display: flex;

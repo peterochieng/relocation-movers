@@ -1,13 +1,29 @@
-$background-color-main: #EF1F0C; 
+$background-color-main: #ef1f0c;
 $background-color-hover: #f13524;
-$background-color-light: #fde9e7; 
+$background-color-light: #fde9e7;
 $white: #fff;
 $white-passive: #808080;
 $white-passive-link: #666666;
 $black: #000;
-$section-background:#F9F9F9;
-$icon-black: #B1B1B1;
+$section-background: #f9f9f9;
+$icon-black: #b1b1b1;
 $dark-background: #252525;
-$background-gradient-main: linear-gradient(to right, #ED140B, #FD6E36);
+$background-gradient-main: linear-gradient(to right, #ed140b, #fd6e36);
 $background-gradient-secondary: linear-gradient(to right, #282828, #323232);
-$button-background: #1F2C8C;
+$button-background: #1f2c8c;
+
+$breakpoints: (
+  "mobile": 480px,
+  "tablet": 768px,
+  "desktop": 1366px,
+);
+
+@mixin respond($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+      @media (max-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+      }
+    } @else {
+      @warn "Invalid breakpoint: #{$breakpoint}.";
+    }
+  }

@@ -8,10 +8,25 @@
   align-items: center;
   justify-content: center;
 
+  @include respond('mobile'){
+    height: auto;
+    padding: 6rem 0rem;
+  }
+
+  @include respond('tablet'){
+    height: auto;
+    padding: 6rem 0rem;
+
+  }
+
   .whoweare__content {
     display: flex;
     justify-content: space-around;
     gap: 2rem;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+    }
 
     .whoweare__xp_years {
       background-image: url("/hero-bg.jpg");
@@ -24,6 +39,10 @@
       display: flex;
       align-items: flex-end;
       justify-content: flex-end;
+
+      @media (max-width: 576px) {
+        width: unset;
+      }
     }
 
     .whoweare__xp_content {
@@ -37,6 +56,10 @@
       margin-right: -30px;
       margin-bottom: -11px;
       box-shadow: 0 3px 10px $white-passive-link;
+
+      @media (max-width: 456px) {
+        margin-right: 0px;
+      }
 
       p {
         font-size: x-large;
