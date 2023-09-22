@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import logo from "../../../public/logo.jpg"
+import logo from "../../../public/logo.jpeg"
 import styles from "./clientelle.module.scss";
 
 const Clientelle = () => {
@@ -12,9 +12,9 @@ const Clientelle = () => {
       </div>
 
       <div className={styles.clientelle__logo__list}>
+      {/* <Image src={logo} alt="my_logo"></Image>
       <Image src={logo} alt="my_logo"></Image>
-      <Image src={logo} alt="my_logo"></Image>
-      <Image src={logo} alt="my_logo"></Image>
+      <Image src={logo} alt="my_logo"></Image> */}
       </div>
 
     </div>

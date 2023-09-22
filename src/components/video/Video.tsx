@@ -14,22 +14,22 @@ const Video = () => {
     {
       icon: <FiTruck />,
       numbers: "56312",
-      title: "Product delivery",
+      title: "Service Delivery",
     },
     {
       icon: <FaCodeBranch />,
-      numbers: "56312",
-      title: "World Wide Branch",
+      numbers: "100",
+      title: "Global Service Network",
     },
     {
       icon: <FaSpaceShuttle/>,
-      numbers: "56312",
-      title: "Modern transport",
+      numbers: "3",
+      title: "Contemporary Transportation Solutions",
     },
     {
       icon: <FaAward />,
-      numbers: "56312",
-      title: "Award winning",
+      numbers: "4",
+      title: "Recognized for Excellence",
     },
   ];
 

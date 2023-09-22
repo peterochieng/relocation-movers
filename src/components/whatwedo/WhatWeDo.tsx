@@ -10,7 +10,7 @@ const WhatWeDo = () => {
     <div className={styles.whatwedo}>
       <div className={styles.whatwedo__content}>
         <Image
-          src={"/hero-bg.jpg"}
+          src={"/movers-2.jpeg"}
           alt="what_we_do_image"
           width={0}
           height={0}
@@ -23,7 +23,7 @@ const WhatWeDo = () => {
             <h4>What We Do</h4>
           </div>
 
-          <h1>Explore Our Main Goals for Business</h1>
+          <h1> Our Key Business Objectives and Services</h1>
 
           <div className={styles.whatwedo__item_list}>
             <span>
@@ -31,10 +31,9 @@ const WhatWeDo = () => {
               <BiAnchor></BiAnchor>{" "}
             </span>
             <div className={styles.whatwedo__item_desc}>
-              <h5>Time Maintenance</h5>
+              <h5>Client-Centric Approach</h5>
               <p>
-                Lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum
-                lorem ipsum
+              We prioritize your needs, offering tailored solutions across a spectrum of services
               </p>
             </div>
           </div>
@@ -45,10 +44,9 @@ const WhatWeDo = () => {
               <FaShuttleVan></FaShuttleVan>{" "}
             </span>
             <div className={styles.whatwedo__item_desc}>
-              <h5>Security & Trust</h5>
+              <h5>Diverse Service Portfolio</h5>
               <p>
-                Lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum
-                lorem ipsum
+              From relocations to storage, our comprehensive offerings ensure we meet your every requirement
               </p>
             </div>
           </div>

@@ -9,8 +9,8 @@ export default function Home() {
     <div className={styles.hero}>
       <div className={styles.hero__content}>
         <div className={styles.hero__text}>
-          <h1>
-            World&lsquo;s Best <br></br> Transportation <br></br> and Logistics
+          <h1>   
+          Unparalleled Movers <br></br> and Relocation <br></br> Services
           </h1>
         </div>
         <div className={styles.hero__button}>
@@ -47,8 +47,8 @@ export default function Home() {
               <HiTruck></HiTruck>
             </span>
             <div className={styles.hero__service_item}>
-              <h1>Road Freight</h1>
-              <p>Lorem ipsum lorem ipsum</p>
+              <h1>House moving</h1>
+              <p>Reliable Home Relocation Experts</p>
               <span>Read More</span>
             </div>
           </div>
@@ -57,8 +57,8 @@ export default function Home() {
               <BsFillTrainFreightFrontFill></BsFillTrainFreightFrontFill>
             </span>
             <div className={styles.hero__service_item}>
-              <h1>Sea Freight</h1>
-              <p>Lorem ipsum lorem ipsum</p>
+              <h1>Office Moving</h1>
+              <p>Efficient Corporate Relocation Specialists</p>
               <span>Read More</span>
             </div>
           </div>
@@ -67,8 +67,8 @@ export default function Home() {
               <BsFillAirplaneEnginesFill></BsFillAirplaneEnginesFill>
             </span>
             <div className={styles.hero__service_item}>
-              <h1>Air Freight</h1>
-              <p>Lorem ipsum lorem ipsum</p>
+              <h1>Country Moving</h1>
+              <p>Professional Rural Relocation Service</p>
               <span>Read More</span>
             </div>
           </div>

@@ -41,7 +41,7 @@ const Quotation = () => {
           <span className={styles.quotion__title_line_1}></span>
         </div>
 
-        <h1>Booking for Product Transportation</h1>
+        <h1>Requesting a Transportation Quote</h1>
       </div>
 
       <div className={styles.quotion__form}>

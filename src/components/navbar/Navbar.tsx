@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "./../../../public/logo.jpg";
+import logo from "./../../../public/logo.jpeg";
 import styles from "./navbar.module.scss";
 import Link from "next/link";
 

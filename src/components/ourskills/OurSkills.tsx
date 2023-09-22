@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import styles from "./ourskilss.module.scss";
 import { FiSend } from "react-icons/fi";
@@ -13,13 +12,12 @@ const OurSkills = () => {
             <h4>Our Skills</h4>
           </div>
 
-          <h3>Our Proffessional Experience & Skills</h3>
+          <h3>Our Expertise and Proficiency in the Field</h3>
 
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Consequuntur molestiae a quam possimus eligendi! Mollitia illo quos
-            veniam reiciendis fugit error esse tempore odit sunt, quaerat ex
-            iste aliquam blanditiis?
+            We bring a wealth of knowledge and mastery to our work, backed by
+            years of experience, ensuring top-notch service quality and
+            exceptional results in our field.
           </p>
 
           <span className={styles.OurSkills__button}>
@@ -33,7 +31,7 @@ const OurSkills = () => {
         <div className={styles.OurSkills__rating}>
           <div className={styles.OurSkills__rating_pro}>
             <h5>
-              Sea Freight <span>85%</span>
+            Residential Moving <span>95%</span>
             </h5>
 
             <div className={styles.ourskills__rater}>
@@ -44,7 +42,7 @@ const OurSkills = () => {
 
           <div className={styles.OurSkills__rating_pro}>
             <h5>
-              Road Freight <span>95%</span>
+            Office Moving <span>95%</span>
             </h5>
 
             <div className={styles.ourskills__rater}>
@@ -55,7 +53,7 @@ const OurSkills = () => {
 
           <div className={styles.OurSkills__rating_pro}>
             <h5>
-              Air Freight <span>95%</span>
+            Packing and Unpacking <span>95%</span>
             </h5>
 
             <div className={styles.ourskills__rater}>
@@ -66,7 +64,7 @@ const OurSkills = () => {
 
           <div className={styles.OurSkills__rating_pro}>
             <h5>
-              Air Freight <span>95%</span>
+            Loading and Offloading <span>95%</span>
             </h5>
 
             <div className={styles.ourskills__rater}>
@@ -77,7 +75,7 @@ const OurSkills = () => {
 
           <div className={styles.OurSkills__rating_pro}>
             <h5>
-              Air Freight <span>95%</span>
+            Country Moving <span>95%</span>
             </h5>
 
             <div className={styles.ourskills__rater}>

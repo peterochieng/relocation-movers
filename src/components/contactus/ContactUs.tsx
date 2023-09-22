@@ -89,7 +89,7 @@ const ContactUs = () => {
               <p>Contact Us</p>
               <span className={styles.contactus__title_line_1}></span>
             </div>
-            <h1>Booking for Product Transportation</h1>
+            <h1>Requesting a Transportation Quote</h1>
           </div>
 
           <div className={styles.contactus__form}>

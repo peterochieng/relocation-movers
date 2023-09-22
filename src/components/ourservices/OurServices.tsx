@@ -13,28 +13,27 @@ type OurServicesProps = {
 const OurServices = () => {
   const OurServicesData: OurServicesProps[] = [
     {
-      image: "/hero-bg.jpg",
-      text: "Sea Freight Transportation",
-      alt: "Sea Freight Transportation",
+      image: "/home-moves.jpeg",
+      text: "Home and Office Moves",
+      alt: "Home and Office Moves",
       icon: TfiControlForward,
     },
     {
-      image: "/hero-bg.jpg",
-      text: "Air Freight Transportation",
-      alt: "Air Freight Transportation",
+      image: "/hero-bg.jpeg",
+      text: "Packing and Storage Solutions",
+      alt: "Packing and Storage Solutions",
       icon: TfiControlForward,
     },
     {
-      image: "/hero-bg.jpg",
-      text: "Road Freight Transportation",
+      image: "/soul-movers-contact.jpg",
+      text: "Country Relocations",
+      alt: "Country Relocations",
       icon: TfiControlForward,
-      alt: "Road Freight Transportation",
     },
   ];
   return (
     <div className={styles.ourservices}>
       <div className={styles.ourservices__content}>
-        
         <div className={styles.ourservices__title}>
           <div className={styles.ourservices__title_divider_1}></div>
           <h3 className={styles.ourservices__title_text}>Our Services</h3>
@@ -42,7 +41,7 @@ const OurServices = () => {
         </div>
 
         <div className={styles.ourservices__text}>
-          <h1>We are Very Trusted for Our Services</h1>
+          <h1>Customers Highly Trust Our Exceptional Services</h1>
         </div>
 
         <div className={styles.ourservices__cards}>
@@ -58,7 +57,7 @@ const OurServices = () => {
 
               <div className={styles.ourservices__cards_text}>
                 <span className={styles.ourservices__card_height}></span>
-                <h5 className={styles.ourservices__card_text}>{item.text}</h5>
+                <h4 className={styles.ourservices__card_text}>{item.text}</h4>
                 <div className={styles.ourservices__svg}>
                   <item.icon></item.icon>
                 </div>
@@ -66,7 +65,6 @@ const OurServices = () => {
             </div>
           ))}
         </div>
-
       </div>
     </div>
   );

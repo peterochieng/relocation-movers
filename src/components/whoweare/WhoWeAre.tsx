@@ -1,24 +1,24 @@
 import React from "react";
 import styles from "./whoweare.module.scss";
-import { BsFillAirplaneEnginesFill } from "react-icons/bs";
+import { VscWorkspaceTrusted } from "react-icons/vsc";
 
 type DataProps = {
   icon: React.ElementType;
   title: string;
-  text: string;
+  text: string; 
 };
 
 const WhoWeAre = () => {
   const Data: DataProps[] = [
     {
-      icon: BsFillAirplaneEnginesFill,
-      title: "Something to know about who we are",
-      text: "Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum",
+      icon: VscWorkspaceTrusted,
+      title: "Unparalleled Safety Standards",
+      text: "We prioritize your belongings' safety with rigorous protocols, ensuring damage-free transfers",
     },
     {
-      icon: BsFillAirplaneEnginesFill,
-      title: "We have won so many trophies you",
-      text: "Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum ipsum lorem ipsum ipsum lorem ipsum",
+      icon: VscWorkspaceTrusted,
+      title: "Tailored Flexibility for Every Client",
+      text: " Our adaptable approach caters to your unique needs, providing seamless relocation solutions",
     },
   ];
 
@@ -45,7 +45,7 @@ const WhoWeAre = () => {
           </div>
 
           <div className={styles.whoweare__something__content}>
-            <h1>Something to know about who we are</h1>
+            <h1>Your Trusted Partner for Safe and Flexible Relocations</h1>
 
             {Data.map((data) => (
               <div
