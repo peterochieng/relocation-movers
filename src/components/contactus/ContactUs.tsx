@@ -24,17 +24,17 @@ type phoneData = {
 const phoneDetails: phoneData[]=[
   {
     title: "Phone Number",
-    telNumber: 25478454121,
+    telNumber: "0716581430",
     icon: <BiPhoneOutgoing></BiPhoneOutgoing>
 },
 {
   title: "Email Address",
-  telNumber: "admin@milltech.link",
+  telNumber: "officialsoulmovers@gmail.com",
   icon: <TfiEmail></TfiEmail>
 },
 {
   title: "Main Office",
-  telNumber: 25478454121,
+  telNumber: +254716581430,
   icon: <HiLocationMarker></HiLocationMarker>
 },
 ]
